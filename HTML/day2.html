@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solve(meal_cost, tip_percent, tax_percent) {
+    // Write your code here
+    // meal_cost = readLine();
+    // tip_percent = readLine();
+    // tax_percent = readLine();
+    var tip = ((meal_cost/100)*tip_percent);
+   
+    var tax = ((tax_percent/100)*meal_cost);
+   
+    var total_cost = meal_cost+tip+tax;
+    console.log(Math.round(total_cost));
+
+}
+
+solve(12,20,8);
+
+    </script>
+</body>
+</html>
