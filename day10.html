@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main() {
+        let n = parseInt(125);
+         // console.log(n);
+        let base_2=n.toString(2);
+        // console.log(base_2);
+        let arr=base_2.split("0");
+        // console.log(arr);
+        let reduce=arr.reduce((a,b)=>{
+            if(a>b){
+                return a;
+            }else{
+                return b;
+            }
+        })
+        // console.log(reduce.split(""))
+        console.log(reduce.split("").length);
+    
+}
+
+main()
+    </script>
+</body>
+</html>
